@@ -1,13 +1,3 @@
-/* palitra */
-/* title color: #212121; */
-/*text color: #757575; */
-/* h1, button color .link:hover {
-  color: #FFFFFF;
-} */
-/*фон background color: #E5E5E5; */
-/* .link:active {
-  color:#2196F3;
-}  */
 /*сброс настроек*/
 .list {
   list-style: none;
@@ -17,35 +7,28 @@
   --link-color: #000000;
   --prim-text-color: #757575;
   --titl-text-color: #212121;
+  --title-background-color: #2f303a;
   --hover-color: #ffffff;
   --focus-color: #2196f3;
 }
-/* шріфт */
-/* --text-subtitle-font-weight: 700;
-  font-size: 36px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  /* xxxx
-
-  font-family: 
-'Roboto';
-
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 2.0;
-
-}
 
 .body {
+  font-family: roboto, sans-serif;
   background-color: #e5e5e5;
   color: var(--prim-text-color);
-  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 /* верхня лінія */
 .logo {
   color: var(--focus-color);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 .logo-studio {
   color: var(--link-color);
@@ -81,11 +64,10 @@ line-height: 2.0;
 
 .title {
   color: var(--hover-color);
-  background-color: var(--focus-color);
-
+  background-color: var(--title-background-color);
   font-weight: 900;
-  font-size: 1, 36;
-  line-height: 60px;
+  font-size: 44px;
+  line-height: 1.34;
   text-align: center;
   letter-spacing: 0.06em;
 }
@@ -101,26 +83,23 @@ line-height: 2.0;
   letter-spacing: 0.06em;
 }
 /* наші переваги */
+.invisible {
+  visibility: hidden;
+}
 .subtitle {
   color: var(--titl-text-color);
-  /* font-weight: 700; */
-  font-size: 14px;
+  font-weight: 700;
   line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 .work-subtitle {
   color: var(--titl-text-color);
-  /* font-weight: 700; */
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .text {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 /* наша робота */
@@ -134,14 +113,36 @@ line-height: 2.0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 .job-title {
   font-size: 16px;
   line-height: 1.2;
+}
+
+/* footer */
+.footer {
+  background-color: var(--title-background-color);
+}
+.footer-studio {
+  color: var(--hover-color);
   letter-spacing: 0.03em;
 }
-/* footer */
+.footer-mail {
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+.tel-footer {
+  line-height: 1.71px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-mail:hover,
+.footer-mail:focus {
+  color: var(--focus-color);
+}
+.tel-footer:hover,
+.tel-foooter:focus {
+  color: var(--focus-color);
+}
 
 /* сторінка-2 */
 
@@ -168,5 +169,4 @@ line-height: 2.0;
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
 }
